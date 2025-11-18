@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar - EcoLodge</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌿 EcoLodge</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reservas.html" style="color: var(--verde-claro);">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 style="text-align: center; margin: 2rem 0; color: var(--verde-oscuro);">Planifica tu Escapada</h2>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+            
+            <form id="form-reserva" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--sombra); flex: 1; min-width: 300px;">
+                
+                <div style="margin-bottom: 1rem;">
+                    <label>Nombre Completo:</label>
+                    <input type="text" id="nombre" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label>Tipo de Habitación:</label>
+                    <select id="seleccion-habitacion" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="0" data-precio="0">Selecciona una opción...</option>
+                        <option value="1" data-precio="150">Bungalow Selva ($150)</option>
+                        <option value="2" data-precio="280">Cabaña Familiar ($280)</option>
+                        <option value="3" data-precio="200">Glamping Domo ($200)</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                    <div style="flex: 1; margin-bottom: 1rem;">
+                        <label>Fecha Entrada:</label>
+                        <input type="date" id="fecha-entrada" required style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+                    </div>
+                    <div style="flex: 1; margin-bottom: 1rem;">
+                        <label>Fecha Salida:</label>
+                        <input type="date" id="fecha-salida" required style="width: 100%; padding: 8px; border: 1px solid #ccc;">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-reserva" style="border: none; cursor: pointer; font-size: 1rem;">Confirmar Reserva</button>
+                <p id="mensaje-error" style="color: red; margin-top: 1rem; display: none;"></p>
+            </form>
+
+            <div style="background: var(--verde-oscuro); color: white; padding: 2rem; border-radius: 10px; box-shadow: var(--sombra); flex: 1; min-width: 300px; height: fit-content;">
+                <h3 style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 1rem; margin-bottom: 1rem;">Resumen de Costo</h3>
+                
+                <p>Precio por noche: <span id="display-precio" style="float: right; font-weight: bold;">$0</span></p>
+                <p>Noches totales: <span id="display-noches" style="float: right; font-weight: bold;">0</span></p>
+                
+                <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.3); font-size: 1.5rem;">
+                    Total: <span id="display-total" style="float: right; font-weight: bold;">$0</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer style="margin-top: 3rem;">
+        <p>&copy; 2024 EcoLodge Reservas.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
