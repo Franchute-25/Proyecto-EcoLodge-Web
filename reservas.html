@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<<<<<<< Updated upstream
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar - EcoLodge</title>
@@ -75,117 +74,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-=======
-  <meta charset="UTF-8" />
-  <title>Reserva de habitaciones</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="reservas-header">
-    <div class="logo">PE | EcoLodge – Reservas</div>
-    <nav>
-      <a href="index.html">Volver al inicio</a>
-    </nav>
-  </header>
-
-  <main class="booking-page">
-    <div class="booking-container">
-      <div class="booking-header">
-        <h1>Reserva tu habitación</h1>
-        <p>Completa el formulario para calcular el costo total y confirmar tu estancia.</p>
-      </div>
-
-      <div class="booking-wrapper">
-        <form id="bookingForm" class="booking-form">
-          <h3>Datos del huésped</h3>
-
-          <label for="fullName">Nombre y apellidos completos</label>
-          <input type="text" id="fullName" required>
-
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" required>
-
-          <label for="phone">Teléfono</label>
-          <input type="tel" id="phone" required>
-
-          <h3>Detalles de la reserva</h3>
-
-          <label for="roomType">Tipo de habitación</label>
-          <select id="roomType" required>
-            <option value="">Selecciona una opción</option>
-            <option value="deluxe" data-price="180">
-              Habitación Deluxe - USD 180 / noche
-            </option>
-            <option value="superior" data-price="145">
-              Habitación Superior Garden View - USD 145 / noche
-            </option>
-            <option value="junior" data-price="260">
-              Junior Suite Vista al Atardecer - USD 260 / noche
-            </option>
-            <option value="familiar" data-price="310">
-              Suite Familiar - USD 310 / noche
-            </option>
-            <option value="presidencial" data-price="620">
-              Suite Presidencial - USD 620 / noche
-            </option>
-          </select>
-
-          <div class="booking-dates">
-            <div>
-              <label for="checkIn">Fecha de entrada</label>
-              <input type="date" id="checkIn" required>
-            </div>
-            <div>
-              <label for="checkOut">Fecha de salida</label>
-              <input type="date" id="checkOut" required>
-            </div>
-          </div>
-
-          <button type="submit" class="btn-confirm">
-            Confirmar reserva
-          </button>
-        </form>
-        <aside class="booking-summary">
-          <h3>Resumen de costos</h3>
-
-          <div class="summary-row">
-            <span>Precio por noche:</span>
-            <span id="pricePerNight">USD 0.00</span>
-          </div>
-
-          <div class="summary-row">
-            <span>Número de noches:</span>
-            <span id="numNights">0</span>
-          </div>
-
-          <hr>
-
-          <div class="summary-row">
-            <span>Subtotal:</span>
-            <span id="subtotal">USD 0.00</span>
-          </div>
-
-          <div class="summary-row">
-            <span>IVA (10%):</span>
-            <span id="tax">USD 0.00</span>
-          </div>
-
-          <div class="summary-row total-row">
-            <span>Total:</span>
-            <span id="total">USD 0.00</span>
-          </div>
-
-          <p class="summary-note">
-            * Los precios mostrados son orientativos y pueden variar según
-            disponibilidad y promociones.
-          </p>
-        </aside>
-      </div>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
->>>>>>> Stashed changes
 </body>
 </html>
