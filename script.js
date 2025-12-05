@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const tax = subtotal * 0.10;
         const total = subtotal + tax;
 
-    
         pricePerNightSpan.textContent = "USD " + pricePerNight.toFixed(2);
         numNightsSpan.textContent = numNights;
         subtotalSpan.textContent = "USD " + subtotal.toFixed(2);
@@ -44,15 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
         totalSpan.textContent = "USD " + total.toFixed(2);
       }
 
-      
       roomType.addEventListener("change", calculateSummary);
       checkIn.addEventListener("change", calculateSummary);
       checkOut.addEventListener("change", calculateSummary);
 
-      
       form.addEventListener("submit", function (e) {
         e.preventDefault();
-        calculateSummary(); 
+        calculateSummary();
 
         if (!roomType.value) {
           alert("Por favor, selecciona un tipo de habitación.");
@@ -65,6 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
           "\nTipo de habitación: " + roomType.options[roomType.selectedIndex].text +
           "\nNoches: " + numNightsSpan.textContent +
           "\nTotal: " + totalSpan.textContent
-        );  
+        );
       });
     });
