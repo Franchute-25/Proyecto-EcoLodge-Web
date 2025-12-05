@@ -1,42 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoLodge - Naturaleza & Confort</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Hotel Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
-    <header>
-        <h1>🌿 EcoLodge</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Conecta con la Naturaleza</h2>
-            <p>El descanso que mereces, con el respeto que el planeta necesita.</p>
+  <header class="main-header">
+    <div class="logo">
+      <div class="logo-box">PE</div>
+      <span class="logo-text">EcoLodge</span>
+    </div>
+    <nav>
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#servicios">Servicios</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-right">
+      <span>Mis reservas</span>
+      <span>|</span>
+      <span>+51 900 123 456</span>
+      <a href="#" class="btn-login">Iniciar sesión</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay">
+        <h1 class="hero-title">Deséalo y hazlo realidad</h1>
+        <p class="hero-subtitle">
+          La Navidad llega a nuestros destinos con hasta un 20% de descuento.
+        </p>
+        <a href="#reservas" class="btn-primary">Descubre más</a>
+      </div>
+      <div class="search-bar" id="reservas">
+        <div class="search-tabs">
+          <div class="search-tab active">HOTELES</div>
+          <div class="search-tab">VUELO + HOTEL</div>
         </div>
+
+        <div class="search-fields">
+          <div class="field">
+            <span>🏨</span>
+            <input type="text" placeholder="Elige un hotel o destino" />
+          </div>
+          <div class="field">
+            <span>📅</span>
+            <input type="text" placeholder="Fecha entrada - salida" />
+          </div>
+          <div class="field">
+            <span>🛏</span>
+            <input type="text" placeholder="1 Habitación, 2 personas" />
+          </div>
+          <div class="field">
+            <span>%</span>
+            <input type="text" placeholder="Código promocional" />
+          </div>
+          <button class="field btn-search">BUSCAR</button>
+        </div>
+      </div>
     </section>
+    <section class="room-section" id="habitaciones">
+  <div class="room-image">
+    <img src="/img/habitacion.jpg" alt="Habitación Deluxe">
+  </div>
 
-    <main class="container">
-        <h2 style="text-align: center; margin-top: 2rem; color: var(--verde-oscuro);">Nuestras Estancias</h2>
-        
-        <div id="contenedor-habitaciones" class="grid-habitaciones">
-            <p style="text-align: center;">Cargando habitaciones...</p>
-        </div>
-    </main>
+  <div class="room-info">
+    <h2 class="room-title">Habitación Deluxe</h2>
+    <p class="room-description">
+      La Habitación Deluxe combina elegancia y confort en un ambiente moderno diseñado para el descanso. Su terraza privada y su iluminación cálida crean un espacio ideal para desconectar después de un día de viaje o actividades.
+    </p>
 
-    <footer>
-        <p>&copy; 2024 EcoLodge Reservas. Todos los derechos reservados.</p>
-    </footer>
+    <div class="room-details">
+      <div class="detail-item">
+        <span class="detail-icon">👥</span>
+        <p><strong>Capacidad:</strong> 2 adultos + 1 niño</p>
+      </div>
 
-    <script src="js/main.js"></script>
+      <div class="detail-item">
+        <span class="detail-icon">⭐</span>
+        <p><strong>Características:</strong> Cama King, vista al mar, TV 55”, Wi-Fi, minibar, terraza privada</p>
+      </div>
+
+      <div class="detail-item">
+        <span class="detail-icon">💲</span>
+        <p><strong>Precio por noche:</strong> S/ 180</p>
+      </div>
+    </div>
+
+    <a href="#" class="room-btn">RESERVAR AHORA</a>
+  </div>
+</section>
+
+<section class="room-section">
+  <div class="room-info">
+    <h2 class="room-title">Habitación Superior Garden View</h2>
+    <p class="room-description">
+      Perfecta para quienes buscan tranquilidad, esta habitación ofrece una vista relajante a los jardines tropicales. Su ambiente armonioso y moderno la convierte en una opción ideal para parejas o viajeros individuales.
+    </p>
+
+    <div class="room-details">
+      <div class="detail-item">
+        <span class="detail-icon">👥</span>
+        <p><strong>Capacidad:</strong> 2 adultos</p>
+      </div>
+
+      <div class="detail-item">
+        <span class="detail-icon">⭐</span>
+        <p><strong>Características:</strong> Cama Queen Size, Balcón con vista a los jardines tropicales, Escritorio ergonómico, TV 50", Caja fuerte digital, Cafetera Nespresso, Wi-Fi gratuito</p>
+      </div>
+
+      <div class="detail-item">
+        <span class="detail-icon">💲</span>
+        <p><strong>Precio por noche:</strong> S/ 145</p>
+      </div>
+    </div>
+
+    <a href="#" class="room-btn">RESERVAR AHORA</a>
+  </div>
+  <div class="room-image">
+    <img src="/img/habitacion1.jpg" alt="Habitación Deluxe">
+  </div>
+</section>
+   <section class="room-section">
+  <div class="room-image">
+    <img src="/img/habitacion2.jpg" alt="Habitación Deluxe">
+  </div>
+
+  <div class="room-info">
+    <h2 class="room-title">Junior Suite Vista al Atardecer</h2>
+    <p class="room-description">
+      Esta suite ofrece un ambiente amplio y luminoso con ventanales panorámicos desde los que se puede disfrutar de los atardeceres más espectaculares. Ideal para familias o viajeros exigentes que buscan espacio adicional.
+
+    <div class="room-details">
+      <div class="detail-item">
+        <span class="detail-icon">👥</span>
+        <p><strong>Capacidad:</strong> 3 adultos o 2 adultos + 2 niños</p>
+      </div>
+
+      <div class="detail-item">
+        <span class="detail-icon">⭐</span>
+        <p><strong>Características:</strong> Amplia sala de estar integrada, Cama King Size Ultra-Soft, Ventanales panorámicos, Hidromasaje privado, Amenities premium, TV 60", Room service 24 h, Wi-Fi gratuito</p>
+      </div>
+
+      <div class="detail-item">
+        <span class="detail-icon">💲</span>
+        <p><strong>Precio por noche:</strong> S/ 280</p>
+      </div>
+    </div>
+
+    <a href="#" class="room-btn">RESERVAR AHORA</a>
+  </div>
+</section>
 </body>
 </html>
